@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6cE-xu-3DK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6cE-xu-3DK">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,7 +14,7 @@
                     <view key="view" contentMode="scaleToFill" id="8gG-O3-PkH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="qXu-Yl-YRP"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Storage" image="book" catalog="system" selectedImage="book.fill" id="B02-ab-O7x"/>
@@ -85,27 +85,27 @@
             </objects>
             <point key="canvasLocation" x="1210" y="185"/>
         </scene>
-        <!--Item-->
+        <!--Suppliers-->
         <scene sceneID="SB9-TF-t38">
             <objects>
                 <viewController id="qhv-FW-SIM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zjm-7e-l3d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="rcG-aU-OJD"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="VrU-7J-VdR"/>
+                    <tabBarItem key="tabBarItem" title="Suppliers" image="person" catalog="system" id="VrU-7J-VdR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Nx-Wa-PbK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2810.144927536232" y="916.74107142857133"/>
         </scene>
-        <!--Item 1-->
+        <!--Order-->
         <scene sceneID="ifi-kj-1d0">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mGw-AA-G2a" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="knw-kT-ofl"/>
+                    <tabBarItem key="tabBarItem" title="Order" image="cart" catalog="system" id="knw-kT-ofl"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="woQ-qA-pUk">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -134,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bM1-8c-SY6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-96" y="2338"/>
+            <point key="canvasLocation" x="-103" y="2338"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="HeU-rs-2Wg">
@@ -150,11 +150,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oAI-6l-XaM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1654" y="2338"/>
+            <point key="canvasLocation" x="1606" y="2338"/>
         </scene>
     </scenes>
     <resources>
-        <image name="book" catalog="system" width="64" height="50"/>
+        <image name="book" catalog="system" width="64" height="52"/>
         <image name="book.fill" catalog="system" width="64" height="50"/>
+        <image name="cart" catalog="system" width="64" height="52"/>
+        <image name="person" catalog="system" width="64" height="60"/>
     </resources>
 </document>
