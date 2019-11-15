@@ -14,15 +14,6 @@
                     <view key="view" contentMode="scaleToFill" id="8gG-O3-PkH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vAa-9D-gJC">
-                                <rect key="frame" x="62" y="301" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Title" id="IOQ-e9-m6F"/>
-                                </items>
-                            </navigationBar>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="qXu-Yl-YRP"/>
                     </view>
@@ -32,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="2068.1159420289855" y="906.69642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Order View Controller-->
         <scene sceneID="GfJ-ah-5uK">
             <objects>
-                <viewController id="J7G-3r-pKM" sceneMemberID="viewController">
+                <viewController id="J7G-3r-pKM" customClass="OrderViewController" customModule="ChefBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pcZ-C4-3QA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

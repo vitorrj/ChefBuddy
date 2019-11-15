@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AE04559E237EDF7E0078FAC4 /* SupplierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE04559D237EDF7E0078FAC4 /* SupplierViewController.swift */; };
+		AE0455A0237EE4570078FAC4 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE04559F237EE4570078FAC4 /* OrderViewController.swift */; };
 		AE2C15F7237EDBB300D168C7 /* StorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2C15F6237EDBB300D168C7 /* StorageViewController.swift */; };
 		AEED9214237C865C0056EA41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEED9213237C865C0056EA41 /* AppDelegate.swift */; };
 		AEED9216237C865C0056EA41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEED9215237C865C0056EA41 /* SceneDelegate.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		AE04559D237EDF7E0078FAC4 /* SupplierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplierViewController.swift; sourceTree = "<group>"; };
+		AE04559F237EE4570078FAC4 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		AE2C15F6237EDBB300D168C7 /* StorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageViewController.swift; sourceTree = "<group>"; };
 		AEED9210237C865C0056EA41 /* ChefBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChefBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEED9213237C865C0056EA41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,9 +67,10 @@
 				AEED9213237C865C0056EA41 /* AppDelegate.swift */,
 				AEED9215237C865C0056EA41 /* SceneDelegate.swift */,
 				AEED9217237C865C0056EA41 /* ViewController.swift */,
+				AEED9219237C865C0056EA41 /* Main.storyboard */,
+				AE04559F237EE4570078FAC4 /* OrderViewController.swift */,
 				AE2C15F6237EDBB300D168C7 /* StorageViewController.swift */,
 				AE04559D237EDF7E0078FAC4 /* SupplierViewController.swift */,
-				AEED9219237C865C0056EA41 /* Main.storyboard */,
 				AEED921F237C865D0056EA41 /* Assets.xcassets */,
 				AEED9221237C865D0056EA41 /* LaunchScreen.storyboard */,
 				AEED9224237C865D0056EA41 /* Info.plist */,
@@ -150,6 +153,7 @@
 				AEED921E237C865C0056EA41 /* ChefBuddy.xcdatamodeld in Sources */,
 				AEED9218237C865C0056EA41 /* ViewController.swift in Sources */,
 				AEED9214237C865C0056EA41 /* AppDelegate.swift in Sources */,
+				AE0455A0237EE4570078FAC4 /* OrderViewController.swift in Sources */,
 				AE2C15F7237EDBB300D168C7 /* StorageViewController.swift in Sources */,
 				AE04559E237EDF7E0078FAC4 /* SupplierViewController.swift in Sources */,
 				AEED9216237C865C0056EA41 /* SceneDelegate.swift in Sources */,
