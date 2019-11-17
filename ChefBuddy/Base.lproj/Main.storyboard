@@ -1,28 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6cE-xu-3DK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6cE-xu-3DK">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Storage-->
-        <scene sceneID="Lot-Bw-2pK">
-            <objects>
-                <viewController id="nJk-EQ-c0M" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8gG-O3-PkH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="qXu-Yl-YRP"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Storage" image="book" catalog="system" selectedImage="book.fill" id="B02-ab-O7x"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x3l-t1-SnX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2068.1159420289855" y="906.69642857142856"/>
-        </scene>
         <!--Order View Controller-->
         <scene sceneID="GfJ-ah-5uK">
             <objects>
@@ -64,7 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ap4-V7-eJ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="832" y="1622"/>
+            <point key="canvasLocation" x="-104" y="1630"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="jO1-K0-iwj">
@@ -77,35 +61,85 @@
                     </tabBar>
                     <connections>
                         <segue destination="mGw-AA-G2a" kind="relationship" relationship="viewControllers" id="0TL-m1-3Az"/>
-                        <segue destination="nJk-EQ-c0M" kind="relationship" relationship="viewControllers" id="sbt-cp-ovK"/>
-                        <segue destination="qhv-FW-SIM" kind="relationship" relationship="viewControllers" id="9rn-8Q-8TZ"/>
+                        <segue destination="R0W-xu-kKd" kind="relationship" relationship="viewControllers" id="7c0-pG-K2h"/>
+                        <segue destination="sZJ-gQ-aBm" kind="relationship" relationship="viewControllers" id="Rkv-7H-2aO"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V9Q-M3-wnB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1210" y="185"/>
         </scene>
-        <!--Suppliers-->
-        <scene sceneID="SB9-TF-t38">
+        <!--Storage-->
+        <scene sceneID="V2p-OJ-Dvb">
             <objects>
-                <viewController id="qhv-FW-SIM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zjm-7e-l3d">
+                <viewController id="dEt-HR-Xh1" customClass="OrderViewController" customModule="ChefBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YFc-5H-Qjl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="rcG-aU-OJD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="sbG-UX-Z3u"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Suppliers" image="person" catalog="system" id="VrU-7J-VdR"/>
+                    <navigationItem key="navigationItem" title="Storage" id="7Rd-Xf-dfh"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5Nx-Wa-PbK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tdB-c4-3iH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2810.144927536232" y="916.74107142857133"/>
+            <point key="canvasLocation" x="1209" y="1630"/>
+        </scene>
+        <!--Suppliers-->
+        <scene sceneID="ecc-Ve-jUM">
+            <objects>
+                <viewController id="5jl-0k-gAu" customClass="SupplierViewController" customModule="ChefBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WLl-pk-UU6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="F7c-Dg-ouW"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Suppliers" id="P6c-b1-teg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mmu-ce-46g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2561" y="1630"/>
+        </scene>
+        <!--Storage-->
+        <scene sceneID="Z80-cG-8K8">
+            <objects>
+                <navigationController id="R0W-xu-kKd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Storage" image="book" catalog="system" selectedImage="book.fill" id="89e-F0-3vi"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ANc-kC-g5N">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dEt-HR-Xh1" kind="relationship" relationship="rootViewController" id="VZh-mU-0fx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QLT-fY-qEW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1209" y="917"/>
+        </scene>
+        <!--Suppliers-->
+        <scene sceneID="VHG-Ut-F2G">
+            <objects>
+                <navigationController id="sZJ-gQ-aBm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Suppliers" image="person" catalog="system" selectedImage="person.fill" id="3DT-rn-Fxx"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ijK-xc-5oI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="5jl-0k-gAu" kind="relationship" relationship="rootViewController" id="cN7-0Q-Z6O"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="egk-Sx-xhr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2561" y="917"/>
         </scene>
         <!--Order-->
         <scene sceneID="ifi-kj-1d0">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mGw-AA-G2a" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Order" image="cart" catalog="system" id="knw-kT-ofl"/>
+                    <tabBarItem key="tabBarItem" title="Order" image="cart" catalog="system" selectedImage="cart.fill" id="knw-kT-ofl"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="woQ-qA-pUk">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -118,7 +152,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zKp-d6-yUo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="832" y="917"/>
+            <point key="canvasLocation" x="-104" y="917"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="H9R-bQ-Hrr">
@@ -134,7 +168,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bM1-8c-SY6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-103" y="2338"/>
+            <point key="canvasLocation" x="-461" y="2358"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="HeU-rs-2Wg">
@@ -150,13 +184,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oAI-6l-XaM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1606" y="2338"/>
+            <point key="canvasLocation" x="236" y="2358"/>
         </scene>
     </scenes>
     <resources>
-        <image name="book" catalog="system" width="64" height="52"/>
+        <image name="book" catalog="system" width="64" height="50"/>
         <image name="book.fill" catalog="system" width="64" height="50"/>
-        <image name="cart" catalog="system" width="64" height="52"/>
-        <image name="person" catalog="system" width="64" height="60"/>
+        <image name="cart" catalog="system" width="64" height="50"/>
+        <image name="cart.fill" catalog="system" width="64" height="50"/>
+        <image name="person" catalog="system" width="64" height="58"/>
+        <image name="person.fill" catalog="system" width="64" height="60"/>
     </resources>
 </document>
