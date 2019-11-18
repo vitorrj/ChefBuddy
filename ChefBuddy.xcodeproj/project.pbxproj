@@ -15,11 +15,12 @@
 		46D4864A2382D0E300AE9F9F /* Bought.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D486492382D0E300AE9F9F /* Bought.swift */; };
 		AE04559E237EDF7E0078FAC4 /* SupplierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE04559D237EDF7E0078FAC4 /* SupplierViewController.swift */; };
 		AE0455A0237EE4570078FAC4 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE04559F237EE4570078FAC4 /* OrderViewController.swift */; };
+		AE26C557238344C600D9BE09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE26C556238344C600D9BE09 /* Main.storyboard */; };
+		AE26C5592383456100D9BE09 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE26C5582383456100D9BE09 /* AddItemViewController.swift */; };
 		AE2C15F7237EDBB300D168C7 /* StorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2C15F6237EDBB300D168C7 /* StorageViewController.swift */; };
 		AEED9214237C865C0056EA41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEED9213237C865C0056EA41 /* AppDelegate.swift */; };
 		AEED9216237C865C0056EA41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEED9215237C865C0056EA41 /* SceneDelegate.swift */; };
 		AEED9218237C865C0056EA41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEED9217237C865C0056EA41 /* ViewController.swift */; };
-		AEED921B237C865C0056EA41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEED9219237C865C0056EA41 /* Main.storyboard */; };
 		AEED921E237C865C0056EA41 /* ChefBuddy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AEED921C237C865C0056EA41 /* ChefBuddy.xcdatamodeld */; };
 		AEED9220237C865D0056EA41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEED921F237C865D0056EA41 /* Assets.xcassets */; };
 		AEED9223237C865D0056EA41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEED9221237C865D0056EA41 /* LaunchScreen.storyboard */; };
@@ -100,12 +101,13 @@
 		46D486492382D0E300AE9F9F /* Bought.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bought.swift; sourceTree = "<group>"; };
 		AE04559D237EDF7E0078FAC4 /* SupplierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplierViewController.swift; sourceTree = "<group>"; };
 		AE04559F237EE4570078FAC4 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		AE26C556238344C600D9BE09 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AE26C5582383456100D9BE09 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		AE2C15F6237EDBB300D168C7 /* StorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageViewController.swift; sourceTree = "<group>"; };
 		AEED9210237C865C0056EA41 /* ChefBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChefBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEED9213237C865C0056EA41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEED9215237C865C0056EA41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AEED9217237C865C0056EA41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AEED921A237C865C0056EA41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEED921D237C865C0056EA41 /* ChefBuddy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChefBuddy.xcdatamodel; sourceTree = "<group>"; };
 		AEED921F237C865D0056EA41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEED9222237C865D0056EA41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -170,14 +172,15 @@
 				46D486452382D0B100AE9F9F /* Supplier.swift */,
 				46D486472382D0C500AE9F9F /* Storage.swift */,
 				46D486492382D0E300AE9F9F /* Bought.swift */,
+				AE26C556238344C600D9BE09 /* Main.storyboard */,
 				AEED9213237C865C0056EA41 /* AppDelegate.swift */,
 				AEED9215237C865C0056EA41 /* SceneDelegate.swift */,
-				AEED9217237C865C0056EA41 /* ViewController.swift */,
-				AEED9219237C865C0056EA41 /* Main.storyboard */,
 				AE04559F237EE4570078FAC4 /* OrderViewController.swift */,
 				4006D3E62382D8EF006D19EE /* UILoggingViewController.swift */,
 				AE2C15F6237EDBB300D168C7 /* StorageViewController.swift */,
 				AE04559D237EDF7E0078FAC4 /* SupplierViewController.swift */,
+				AEED9217237C865C0056EA41 /* ViewController.swift */,
+				AE26C5582383456100D9BE09 /* AddItemViewController.swift */,
 				AEED921F237C865D0056EA41 /* Assets.xcassets */,
 				AEED9221237C865D0056EA41 /* LaunchScreen.storyboard */,
 				AEED9224237C865D0056EA41 /* Info.plist */,
@@ -303,9 +306,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE26C557238344C600D9BE09 /* Main.storyboard in Resources */,
 				AEED9223237C865D0056EA41 /* LaunchScreen.storyboard in Resources */,
 				AEED9220237C865D0056EA41 /* Assets.xcassets in Resources */,
-				AEED921B237C865C0056EA41 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +330,7 @@
 				AE0455A0237EE4570078FAC4 /* OrderViewController.swift in Sources */,
 				AE2C15F7237EDBB300D168C7 /* StorageViewController.swift in Sources */,
 				46D486462382D0B100AE9F9F /* Supplier.swift in Sources */,
+				AE26C5592383456100D9BE09 /* AddItemViewController.swift in Sources */,
 				AE04559E237EDF7E0078FAC4 /* SupplierViewController.swift in Sources */,
 				AEED9216237C865C0056EA41 /* SceneDelegate.swift in Sources */,
 			);
@@ -335,14 +339,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AEED9219237C865C0056EA41 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AEED921A237C865C0056EA41 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AEED9221237C865D0056EA41 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

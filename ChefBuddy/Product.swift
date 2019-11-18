@@ -28,7 +28,7 @@ class Product {
         self.idStor = idStor
         self.weight = weight
         self.idSup = idSup
-        self.image = image
+        self.image = image	
         self.infoWeight = infoWeight
         self.remain = remain
     }
