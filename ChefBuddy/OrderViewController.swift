@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OrderViewController: UIViewController {
+class OrderViewController: UILoggingViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +16,8 @@ class OrderViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    override var vclLoggingName: String{
+        return "OrderViewController" }
     /*
     // MARK: - Navigation
 

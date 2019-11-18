@@ -16,7 +16,11 @@ class ViewController: UIViewController {
         
         
     }
-
+    
+    //viewWillAppear for fresh data
+    //viewDidAppear view is already visible, right place to load heavy stuff and sensor
+    //viewWillDisappear stop sensors and fetching from view did appear
+    //viewDidDisappear save some state
 
 }
 
