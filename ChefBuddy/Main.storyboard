@@ -84,7 +84,7 @@
                                             <attributedString key="attributedText">
                                                 <fragment content="Title">
                                                     <attributes>
-                                                        <font key="NSFont" size="25" name="SFProDisplay-Regular"/>
+                                                        <font key="NSFont" size="24" name="SFProDisplay-Regular"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
