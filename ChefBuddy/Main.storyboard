@@ -137,11 +137,33 @@
                             <outlet property="delegate" destination="3K7-OR-iEW" id="453-CI-6LL"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Suppliers" id="9kf-kK-8jU"/>
+                    <navigationItem key="navigationItem" title="Suppliers" id="9kf-kK-8jU">
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="HeK-f5-rKg">
+                            <connections>
+                                <segue destination="Sh1-fM-sfS" kind="show" id="vdc-3C-dcH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SS9-pd-JYH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2560.8695652173915" y="1629.9107142857142"/>
+        </scene>
+        <!--Add Supplier View Controller-->
+        <scene sceneID="QQh-Ey-hMy">
+            <objects>
+                <viewController id="Sh1-fM-sfS" customClass="addSupplierViewController" customModule="ChefBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CN5-Ym-u5b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="1CU-8Z-U2t"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZEi-CQ-Byz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DV4-Vy-JMq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2561" y="2409"/>
         </scene>
         <!--Storage-->
         <scene sceneID="Z80-cG-8K8">
@@ -280,5 +302,6 @@
         <image name="book.fill" catalog="system" width="64" height="50"/>
         <image name="cart.fill" catalog="system" width="64" height="50"/>
         <image name="person.fill" catalog="system" width="64" height="60"/>
+        <image name="plus" catalog="system" width="64" height="56"/>
     </resources>
 </document>

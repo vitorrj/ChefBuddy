@@ -12,6 +12,7 @@
 		404ABD0C238431B500264503 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 404ABCFE2384319E00264503 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		404ABD0E2384350600264503 /* storageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404ABD0D2384350600264503 /* storageTableViewController.swift */; };
 		404ABD19238471CD00264503 /* suppliersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404ABD18238471CD00264503 /* suppliersTableViewController.swift */; };
+		407E92672385867F0019B288 /* addSupplierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E92662385867F0019B288 /* addSupplierViewController.swift */; };
 		464B6DBF238350A000AD254E /* ProductDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464B6DBE238350A000AD254E /* ProductDAO.swift */; };
 		464B6DC3238356BA00AD254E /* SupplierDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464B6DC2238356BA00AD254E /* SupplierDAO.swift */; };
 		464B6DC5238358C000AD254E /* StorageDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464B6DC4238358C000AD254E /* StorageDAO.swift */; };
@@ -149,6 +150,7 @@
 		404ABCF32384319E00264503 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../Desktop/SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
 		404ABD0D2384350600264503 /* storageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storageTableViewController.swift; sourceTree = "<group>"; };
 		404ABD18238471CD00264503 /* suppliersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suppliersTableViewController.swift; sourceTree = "<group>"; };
+		407E92662385867F0019B288 /* addSupplierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addSupplierViewController.swift; sourceTree = "<group>"; };
 		464B6DBE238350A000AD254E /* ProductDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDAO.swift; sourceTree = "<group>"; };
 		464B6DC2238356BA00AD254E /* SupplierDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplierDAO.swift; sourceTree = "<group>"; };
 		464B6DC4238358C000AD254E /* StorageDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageDAO.swift; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				404ABD18238471CD00264503 /* suppliersTableViewController.swift */,
+				407E92662385867F0019B288 /* addSupplierViewController.swift */,
 			);
 			path = Suppliers;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 				46D486412382D01D00AE9F9F /* Product.swift in Sources */,
 				404ABD0E2384350600264503 /* storageTableViewController.swift in Sources */,
 				464B6DC3238356BA00AD254E /* SupplierDAO.swift in Sources */,
+				407E92672385867F0019B288 /* addSupplierViewController.swift in Sources */,
 				AEED9214237C865C0056EA41 /* AppDelegate.swift in Sources */,
 				464B6DC5238358C000AD254E /* StorageDAO.swift in Sources */,
 				AE0455A0237EE4570078FAC4 /* OrderViewController.swift in Sources */,
