@@ -11,6 +11,7 @@ import UIKit
 class suppliersTableViewController: UITableViewController {
 
     var suppliersNames:[String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
