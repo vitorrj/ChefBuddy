@@ -11,13 +11,14 @@
 		404ABD0B238431B500264503 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 404ABCFE2384319E00264503 /* SQLite.framework */; };
 		404ABD0C238431B500264503 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 404ABCFE2384319E00264503 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		404ABD0E2384350600264503 /* storageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404ABD0D2384350600264503 /* storageTableViewController.swift */; };
+		404ABD19238471CD00264503 /* suppliersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404ABD18238471CD00264503 /* suppliersTableViewController.swift */; };
+		407E92672385867F0019B288 /* addSupplierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E92662385867F0019B288 /* addSupplierViewController.swift */; };
 		464B6DBF238350A000AD254E /* ProductDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464B6DBE238350A000AD254E /* ProductDAO.swift */; };
 		464B6DC3238356BA00AD254E /* SupplierDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464B6DC2238356BA00AD254E /* SupplierDAO.swift */; };
 		464B6DC5238358C000AD254E /* StorageDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464B6DC4238358C000AD254E /* StorageDAO.swift */; };
 		46D486412382D01D00AE9F9F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D486402382D01D00AE9F9F /* Product.swift */; };
 		46D486462382D0B100AE9F9F /* Supplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D486452382D0B100AE9F9F /* Supplier.swift */; };
 		46D486482382D0C500AE9F9F /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D486472382D0C500AE9F9F /* Storage.swift */; };
-		AE04559E237EDF7E0078FAC4 /* SupplierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE04559D237EDF7E0078FAC4 /* SupplierViewController.swift */; };
 		AE0455A0237EE4570078FAC4 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE04559F237EE4570078FAC4 /* OrderViewController.swift */; };
 		AE26C557238344C600D9BE09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE26C556238344C600D9BE09 /* Main.storyboard */; };
 		AE26C5592383456100D9BE09 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE26C5582383456100D9BE09 /* AddItemViewController.swift */; };
@@ -148,13 +149,14 @@
 		4006D3E62382D8EF006D19EE /* UILoggingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILoggingViewController.swift; sourceTree = "<group>"; };
 		404ABCF32384319E00264503 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../Desktop/SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
 		404ABD0D2384350600264503 /* storageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storageTableViewController.swift; sourceTree = "<group>"; };
+		404ABD18238471CD00264503 /* suppliersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suppliersTableViewController.swift; sourceTree = "<group>"; };
+		407E92662385867F0019B288 /* addSupplierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addSupplierViewController.swift; sourceTree = "<group>"; };
 		464B6DBE238350A000AD254E /* ProductDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDAO.swift; sourceTree = "<group>"; };
 		464B6DC2238356BA00AD254E /* SupplierDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplierDAO.swift; sourceTree = "<group>"; };
 		464B6DC4238358C000AD254E /* StorageDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageDAO.swift; sourceTree = "<group>"; };
 		46D486402382D01D00AE9F9F /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		46D486452382D0B100AE9F9F /* Supplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supplier.swift; sourceTree = "<group>"; };
 		46D486472382D0C500AE9F9F /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
-		AE04559D237EDF7E0078FAC4 /* SupplierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplierViewController.swift; sourceTree = "<group>"; };
 		AE04559F237EE4570078FAC4 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		AE26C556238344C600D9BE09 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		AE26C5582383456100D9BE09 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
@@ -259,10 +261,10 @@
 			children = (
 				464B6DC4238358C000AD254E /* StorageDAO.swift */,
 				464B6DBE238350A000AD254E /* ProductDAO.swift */,
-				46D486402382D01D00AE9F9F /* Product.swift */,
 				464B6DC2238356BA00AD254E /* SupplierDAO.swift */,
-				46D486452382D0B100AE9F9F /* Supplier.swift */,
 				46D486472382D0C500AE9F9F /* Storage.swift */,
+				46D486402382D01D00AE9F9F /* Product.swift */,
+				46D486452382D0B100AE9F9F /* Supplier.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -288,7 +290,8 @@
 		AEF7FDC223842C9A0008AFB1 /* Suppliers */ = {
 			isa = PBXGroup;
 			children = (
-				AE04559D237EDF7E0078FAC4 /* SupplierViewController.swift */,
+				404ABD18238471CD00264503 /* suppliersTableViewController.swift */,
+				407E92662385867F0019B288 /* addSupplierViewController.swift */,
 			);
 			path = Suppliers;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 				46D486412382D01D00AE9F9F /* Product.swift in Sources */,
 				404ABD0E2384350600264503 /* storageTableViewController.swift in Sources */,
 				464B6DC3238356BA00AD254E /* SupplierDAO.swift in Sources */,
+				407E92672385867F0019B288 /* addSupplierViewController.swift in Sources */,
 				AEED9214237C865C0056EA41 /* AppDelegate.swift in Sources */,
 				464B6DC5238358C000AD254E /* StorageDAO.swift in Sources */,
 				AE0455A0237EE4570078FAC4 /* OrderViewController.swift in Sources */,
@@ -489,8 +493,8 @@
 				464B6DBF238350A000AD254E /* ProductDAO.swift in Sources */,
 				AEF7FDBE23842A290008AFB1 /* WeeklyTableViewController.swift in Sources */,
 				AE26C5592383456100D9BE09 /* AddItemViewController.swift in Sources */,
-				AE04559E237EDF7E0078FAC4 /* SupplierViewController.swift in Sources */,
 				AEED9216237C865C0056EA41 /* SceneDelegate.swift in Sources */,
+				404ABD19238471CD00264503 /* suppliersTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

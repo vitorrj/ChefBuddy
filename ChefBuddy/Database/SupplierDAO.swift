@@ -95,6 +95,20 @@ class SupplierDAO {
         return suppliers
     }
     
+    
+    func getSuppliersName() -> [String] {
+        var suppliersName = [String]()
+        do {
+            for supplier in try db!.prepare(self.suppliers) {
+                suppliersName.append(supplier[name]!)
+            }
+        } catch {
+            print("Select failed")
+        }
+        return suppliersName
+    }
+    
+    
     func deleteSupplier(sid: Int64) -> Bool {
         do {
             let supplier = suppliers.filter(idSup == sid)

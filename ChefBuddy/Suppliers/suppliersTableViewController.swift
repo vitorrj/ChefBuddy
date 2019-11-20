@@ -1,5 +1,5 @@
 //
-//  storageTableViewController.swift
+//  suppliersTableViewController.swift
 //  ChefBuddy
 //
 //  Created by Valerio Volpe on 19/11/2019.
@@ -8,55 +8,69 @@
 
 import UIKit
 
-class storageTableViewController: UITableViewController {
+class suppliersTableViewController: UITableViewController {
 
+    var suppliersNames:[String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        
+            
+//        SupplierDAO.instance.addSupplier(sname: "Antonio", semail: "ant@on.io", saddress: "Via Sad")        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+//         self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
-
-        struct Category {
-            var name: String
-            var items: [String]
+    
+    struct Letter {
+            var X: String
+            var name: [String]
         }
-        var storageLocations: [Category] = [
-            Category(name: "Locations",
-                          items: ["Fridge", "Shelf"]),
+        var alphabetSort: [Letter] = [
+            Letter(X: "A",
+                   name: SupplierDAO.instance.getSuppliersName()),
+//            Letter(X: "C",
+//            name: ["Carlo", "Ciccio"]),
             
         ]
 
 
         override func numberOfSections(in tableView: UITableView) -> Int {
-            return storageLocations.count
+            return alphabetSort.count
         }
 
         override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return storageLocations[section].items.count
+            return alphabetSort[section].name.count
         }
 
 
         override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "storageCell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "suppliersCell", for: indexPath)
 
-            cell.textLabel?.text = storageLocations[indexPath.section].items[indexPath.row]
+            cell.textLabel?.text = alphabetSort[indexPath.section].name[indexPath.row]
 
             return cell
         }
     
         override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-            return storageLocations[section].name
+            return alphabetSort[section].X
         }
-    
-    
-    
-    
+
+    /*
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
+
+        return cell
+    }
+    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -66,19 +80,17 @@ class storageTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-//        if editingStyle == .delete {
-            print(1)
+        if editingStyle == .delete {
             // Delete the row from the data source
-//         objects.remove(at: indexPath.row)
-//        tableView.deleteRows(at: [indexPath], with: .fade)
-//        } else if editingStyle == .insert {
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-//        }    
+        }    
     }
-    
+    */
 
     /*
     // Override to support rearranging the table view.
