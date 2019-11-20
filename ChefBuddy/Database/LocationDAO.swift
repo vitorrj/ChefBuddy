@@ -63,7 +63,7 @@ class LocationDAO {
     
     func addLocation(lnamLoc: String?) -> String? {
         do {
-            let insert = suppliers.insert(nameLoc <- lname)
+            let insert = locations.insert(nameLoc <- lnamLoc)
             try db!.run(insert)
             
             return "Insert done"
