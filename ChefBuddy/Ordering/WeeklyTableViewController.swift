@@ -16,13 +16,21 @@ class WeeklyTableViewController: UITableViewController {
         var ingredientName: [String]
     }
     
-    var ingredient: [ingredientInfo] = [
-        ingredientInfo(location: "Fridge", ingredientName: ["🧀 Cheese", "🍅 Tomatoes"]),
-        ingredientInfo(location: "Pantry", ingredientName: ["🥦 Basil", "🥐 Flour"])
-    ]
+//    ARRAY OF INGREDIENTS
+//    var ingredient: [ingredientInfo] = [
+//        ingredientInfo(location: "Fridge", ingredientName: ["🧀 Cheese", "🍅 Tomatoes"]),
+//        ingredientInfo(location: "Pantry", ingredientName: ["🥦 Basil", "🥐 Flour"])
+//    ]
+        var ingredient: [ingredientInfo] = [
+            ingredientInfo(location: "Fridge",
+                           ingredientName: ProductDAO.instance.getProductName())
+        ]
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

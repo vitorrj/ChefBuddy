@@ -112,6 +112,20 @@ class ProductDAO {
         return products
     }
     
+    func getProductName() -> [String] {
+        var productsName = [String]()
+        
+        do {
+            for product in try db!.prepare(self.products) {
+                productsName.append(product[name]!)
+            }
+        } catch {
+            print("Select failed")
+        }
+        
+        return productsName
+    }
+    
     func deleteProduct(pid: Int64) -> Bool {
         do {
             let product = products.filter(idProd == pid)
