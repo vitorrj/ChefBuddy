@@ -96,11 +96,12 @@ class SupplierDAO {
     }
     
     
-    func getSuppliersName() -> [String] {
+    func getSuppliersName(letter: String) -> [String] { 
         var suppliersName = [String]()
         do {
             for supplier in try db!.prepare(self.suppliers) {
-                suppliersName.append(supplier[name]!)
+                if supplier[name]!.prefix(1) == letter {
+                    suppliersName.append(supplier[name]!)}
             }
         } catch {
             print("Select failed")
