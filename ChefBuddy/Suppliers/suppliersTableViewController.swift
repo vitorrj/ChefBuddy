@@ -33,11 +33,9 @@ class suppliersTableViewController: UITableViewController {
             var name: [String]
         }
         var alphabetSort: [Letter] = [
-            Letter(X: "A",
-                   name: SupplierDAO.instance.getSuppliersName()),
+            Letter(X: "A", name: SupplierDAO.instance.getSuppliersName()),
 //            Letter(X: "C",
 //            name: ["Carlo", "Ciccio"]),
-            
         ]
 
 
