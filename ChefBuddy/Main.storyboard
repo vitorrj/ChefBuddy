@@ -310,7 +310,7 @@
             </objects>
             <point key="canvasLocation" x="1228" y="3080"/>
         </scene>
-        <!--Weekly Table View Controller-->
+        <!--Weekly order-->
         <scene sceneID="lXa-Nu-Lug">
             <objects>
                 <tableViewController id="fvT-AH-JLn" customClass="WeeklyTableViewController" customModule="ChefBuddy" customModuleProvider="target" sceneMemberID="viewController">
@@ -333,8 +333,8 @@
                             <outlet property="delegate" destination="fvT-AH-JLn" id="AVm-qs-gZR"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="AvF-QH-FPR">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="563-Y7-Z2j"/>
+                    <navigationItem key="navigationItem" title="Weekly order" id="AvF-QH-FPR">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="nIQ-g3-wNP"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yo1-IH-tuo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
