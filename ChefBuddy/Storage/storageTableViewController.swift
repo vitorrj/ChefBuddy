@@ -13,6 +13,9 @@ class storageTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        LocationDAO.instance.addLocation(lnamLoc: "Fridge")
+        ProductDAO.instance.addProduct(pname: "Tomato", plocation: "Fridge", pidStor: 1, pbought: 5, pidSup: 1, pimage: "", pinfoWeight: "kg", premain: 2, pquick: false)
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -28,7 +31,7 @@ class storageTableViewController: UITableViewController {
         }
         var storageLocations: [Category] = [
             Category(name: "Locations",
-                          items: ["Fridge", "Shelf"]),
+                     items: LocationDAO.instance.getLocationsName()),
             
         ]
 
@@ -70,7 +73,7 @@ class storageTableViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
 //        if editingStyle == .delete {
-            print(deleted)
+            print("deleted")
             // Delete the row from the data source
 //         objects.remove(at: indexPath.row)
 //        tableView.deleteRows(at: [indexPath], with: .fade)

@@ -13,6 +13,8 @@
 		407E92672385867F0019B288 /* addSupplierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E92662385867F0019B288 /* addSupplierViewController.swift */; };
 		407E92A12385A5370019B288 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E92A02385A5370019B288 /* Location.swift */; };
 		407E92A32385A56F0019B288 /* LocationDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E92A22385A56F0019B288 /* LocationDAO.swift */; };
+		40E6D9642386CCB400380209 /* productInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6D9632386CCB400380209 /* productInfoViewController.swift */; };
+		40E6D96D2386CF4800380209 /* productTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6D96C2386CF4800380209 /* productTableViewController.swift */; };
 		464B6DBF238350A000AD254E /* ProductDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464B6DBE238350A000AD254E /* ProductDAO.swift */; };
 		464B6DC3238356BA00AD254E /* SupplierDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464B6DC2238356BA00AD254E /* SupplierDAO.swift */; };
 		464B6DC5238358C000AD254E /* StorageDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464B6DC4238358C000AD254E /* StorageDAO.swift */; };
@@ -155,6 +157,8 @@
 		407E92772385A0FC0019B288 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../Desktop/SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
 		407E92A02385A5370019B288 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		407E92A22385A56F0019B288 /* LocationDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDAO.swift; sourceTree = "<group>"; };
+		40E6D9632386CCB400380209 /* productInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productInfoViewController.swift; sourceTree = "<group>"; };
+		40E6D96C2386CF4800380209 /* productTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productTableViewController.swift; sourceTree = "<group>"; };
 		464B6DBE238350A000AD254E /* ProductDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDAO.swift; sourceTree = "<group>"; };
 		464B6DC2238356BA00AD254E /* SupplierDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplierDAO.swift; sourceTree = "<group>"; };
 		464B6DC4238358C000AD254E /* StorageDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageDAO.swift; sourceTree = "<group>"; };
@@ -289,7 +293,9 @@
 		AEF7FDC123842C930008AFB1 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				40E6D96C2386CF4800380209 /* productTableViewController.swift */,
 				404ABD0D2384350600264503 /* storageTableViewController.swift */,
+				40E6D9632386CCB400380209 /* productInfoViewController.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -486,11 +492,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40E6D9642386CCB400380209 /* productInfoViewController.swift in Sources */,
 				4006D3E72382D8EF006D19EE /* UILoggingViewController.swift in Sources */,
 				AEED921E237C865C0056EA41 /* ChefBuddy.xcdatamodeld in Sources */,
 				46D486482382D0C500AE9F9F /* Storage.swift in Sources */,
 				46D486412382D01D00AE9F9F /* Product.swift in Sources */,
 				404ABD0E2384350600264503 /* storageTableViewController.swift in Sources */,
+				40E6D96D2386CF4800380209 /* productTableViewController.swift in Sources */,
 				407E92A12385A5370019B288 /* Location.swift in Sources */,
 				464B6DC3238356BA00AD254E /* SupplierDAO.swift in Sources */,
 				407E92A32385A56F0019B288 /* LocationDAO.swift in Sources */,
