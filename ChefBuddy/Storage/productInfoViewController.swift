@@ -13,10 +13,19 @@ class productInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let qlabelText:String = "5" + "Kg"
+        quantityLabel.text = qlabelText
+
+        let ilabelText:String = "To be kept around" + "5" + "°C \n" + "Expiry date: " + "1/1/2000"
+        infoLabel.text = ilabelText
+
+        
         // Do any additional setup after loading the view.
     }
     
 
+    @IBOutlet weak var quantityLabel: UILabel!
+    @IBOutlet weak var infoLabel: UILabel!
     /*
     // MARK: - Navigation
 

@@ -12,7 +12,6 @@ class productTableViewController: UITableViewController {
 
         override func viewDidLoad() {
             super.viewDidLoad()
-            
             // Uncomment the following line to preserve selection between presentations
             // self.clearsSelectionOnViewWillAppear = false
 
@@ -23,7 +22,6 @@ class productTableViewController: UITableViewController {
         // MARK: - Table view data source
 
             var items = ProductDAO.instance.getProductName()
-
 
             override func numberOfSections(in tableView: UITableView) -> Int {
                 return 1
@@ -39,9 +37,11 @@ class productTableViewController: UITableViewController {
 
                 cell.textLabel?.text = items[indexPath.row]
                 return cell
+                
             }
-        
-//            override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    
+    
+    //            override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
 //                return storageLocations[section].name
 //            }
         

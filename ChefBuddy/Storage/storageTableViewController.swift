@@ -13,8 +13,8 @@ class storageTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        LocationDAO.instance.addLocation(lnamLoc: "Fridge")
-        ProductDAO.instance.addProduct(pname: "Tomato", plocation: "Fridge", pidStor: 1, pbought: 5, pidSup: 1, pimage: "", pinfoWeight: "kg", premain: 2, pquick: false)
+//        LocationDAO.instance.addLocation(lnamLoc: "Fridge")
+//        ProductDAO.instance.addProduct(pname: "Tomato", plocation: "Fridge", pidStor: 1, pbought: 5, pidSup: 1, pimage: "", pinfoWeight: "kg", premain: 2, pquick: false)
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
