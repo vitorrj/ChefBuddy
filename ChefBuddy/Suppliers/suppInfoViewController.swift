@@ -1,5 +1,5 @@
 //
-//  productInfoViewController.swift
+//  suppInfoViewController.swift
 //  ChefBuddy
 //
 //  Created by Valerio Volpe on 21/11/2019.
@@ -8,24 +8,23 @@
 
 import UIKit
 
-class productInfoViewController: UIViewController {
+class suppInfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let qlabelText:String = "N" + " Kg"
-        quantityLabel.text = qlabelText
-
-        let ilabelText:String = "To be kept around " + "n" + " °C \n" + "Expiry date: " + "dd/mm/yyyy"
-        infoLabel.text = ilabelText
-
-        
+        self.navigationItem.rightBarButtonItem = self.editButtonItem
         // Do any additional setup after loading the view.
+        
+        let plabelText:String = "Phone: \n" + "333 45 678"
+        phoneLabel.text = plabelText
+        let mlabelText:String = "Mail: \n" + "default@mail.com"
+        mailLabel.text = mlabelText
     }
     
-
-    @IBOutlet weak var quantityLabel: UILabel!
-    @IBOutlet weak var infoLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var mailLabel: UILabel!
+    
     /*
     // MARK: - Navigation
 

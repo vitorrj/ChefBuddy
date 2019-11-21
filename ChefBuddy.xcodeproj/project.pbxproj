@@ -16,6 +16,7 @@
 		40E6D9642386CCB400380209 /* productInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6D9632386CCB400380209 /* productInfoViewController.swift */; };
 		40E6D96D2386CF4800380209 /* productTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6D96C2386CF4800380209 /* productTableViewController.swift */; };
 		40E6D9712386E29D00380209 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E6D9702386E29D00380209 /* Main.storyboard */; };
+		40E6D9732386ECF900380209 /* suppInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6D9722386ECF900380209 /* suppInfoViewController.swift */; };
 		464B6DBF238350A000AD254E /* ProductDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464B6DBE238350A000AD254E /* ProductDAO.swift */; };
 		464B6DC3238356BA00AD254E /* SupplierDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464B6DC2238356BA00AD254E /* SupplierDAO.swift */; };
 		464B6DC5238358C000AD254E /* StorageDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464B6DC4238358C000AD254E /* StorageDAO.swift */; };
@@ -160,6 +161,7 @@
 		40E6D9632386CCB400380209 /* productInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productInfoViewController.swift; sourceTree = "<group>"; };
 		40E6D96C2386CF4800380209 /* productTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productTableViewController.swift; sourceTree = "<group>"; };
 		40E6D9702386E29D00380209 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		40E6D9722386ECF900380209 /* suppInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suppInfoViewController.swift; sourceTree = "<group>"; };
 		464B6DBE238350A000AD254E /* ProductDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDAO.swift; sourceTree = "<group>"; };
 		464B6DC2238356BA00AD254E /* SupplierDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplierDAO.swift; sourceTree = "<group>"; };
 		464B6DC4238358C000AD254E /* StorageDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageDAO.swift; sourceTree = "<group>"; };
@@ -305,6 +307,7 @@
 			children = (
 				404ABD18238471CD00264503 /* suppliersTableViewController.swift */,
 				407E92662385867F0019B288 /* addSupplierViewController.swift */,
+				40E6D9722386ECF900380209 /* suppInfoViewController.swift */,
 			);
 			path = Suppliers;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 				464B6DBF238350A000AD254E /* ProductDAO.swift in Sources */,
 				AEF7FDBE23842A290008AFB1 /* WeeklyTableViewController.swift in Sources */,
 				AE26C5592383456100D9BE09 /* AddItemViewController.swift in Sources */,
+				40E6D9732386ECF900380209 /* suppInfoViewController.swift in Sources */,
 				AEED9216237C865C0056EA41 /* SceneDelegate.swift in Sources */,
 				404ABD19238471CD00264503 /* suppliersTableViewController.swift in Sources */,
 			);
