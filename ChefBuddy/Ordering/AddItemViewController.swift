@@ -17,7 +17,7 @@ class AddItemViewController: UIViewController {
     @IBOutlet weak var idSupplier: UITextField!
     @IBOutlet weak var image: UITextField!
     @IBOutlet weak var infoWeight: UITextField!
-    @IBOutlet weak var quick: UISwitch!
+   // @IBOutlet weak var quick: UISwitch!
     //          ----------------------
     
     
@@ -35,10 +35,17 @@ class AddItemViewController: UIViewController {
         var pidSto: Int64! = Int64(idSupplier.text!)
         var pimage: String? = image.text
         var pinfoWeight: String? = infoWeight.text
-        var pquick: Bool! = quick.isOn
-
-        ProductDAO.instance.addProduct(pname: pname, plocation: ploc, pidStor: pidSto, pbought: 0, pidSup: pidSup, pimage: pimage, pinfoWeight: pinfoWeight, premain: 0, pquick: pquick)
+        //var pquick: Bool! = quick.isOn
+        var insert: String?
+                
+        insert = ProductDAO.instance.addProduct(pname: pname, plocation: ploc, pidStor: pidSto, pbought: 0, pidSup: pidSup, pimage: pimage, pinfoWeight: pinfoWeight, premain: 0, pquick: false)
         
+        if (insert == "Insert done") {
+            navigationController?.popViewController(animated: true)
+            dismiss(animated: true, completion: nil)        }
+        else {
+            print("Error insert chek all forms")
+        }
         
     }
     
@@ -50,6 +57,13 @@ class AddItemViewController: UIViewController {
         for item in prods {
             print(item.name)
         }
+    }
+    @IBAction func back(_ sender: UIButton) {
+        // _ = navigationController?.popViewController(animated: true)
+        navigationController?.popViewController(animated: true)
+
+        dismiss(animated: true, completion: nil)
+
     }
     
 }
