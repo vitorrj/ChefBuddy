@@ -17,6 +17,7 @@
 		40E6D96D2386CF4800380209 /* productTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6D96C2386CF4800380209 /* productTableViewController.swift */; };
 		40E6D9712386E29D00380209 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E6D9702386E29D00380209 /* Main.storyboard */; };
 		40E6D9732386ECF900380209 /* suppInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6D9722386ECF900380209 /* suppInfoViewController.swift */; };
+		40E6D9772386F5BB00380209 /* recapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6D9762386F5BB00380209 /* recapViewController.swift */; };
 		464B6DBF238350A000AD254E /* ProductDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464B6DBE238350A000AD254E /* ProductDAO.swift */; };
 		464B6DC3238356BA00AD254E /* SupplierDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464B6DC2238356BA00AD254E /* SupplierDAO.swift */; };
 		464B6DC5238358C000AD254E /* StorageDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464B6DC4238358C000AD254E /* StorageDAO.swift */; };
@@ -162,6 +163,7 @@
 		40E6D96C2386CF4800380209 /* productTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productTableViewController.swift; sourceTree = "<group>"; };
 		40E6D9702386E29D00380209 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		40E6D9722386ECF900380209 /* suppInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suppInfoViewController.swift; sourceTree = "<group>"; };
+		40E6D9762386F5BB00380209 /* recapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recapViewController.swift; sourceTree = "<group>"; };
 		464B6DBE238350A000AD254E /* ProductDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDAO.swift; sourceTree = "<group>"; };
 		464B6DC2238356BA00AD254E /* SupplierDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplierDAO.swift; sourceTree = "<group>"; };
 		464B6DC4238358C000AD254E /* StorageDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageDAO.swift; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 				AE26C5582383456100D9BE09 /* AddItemViewController.swift */,
 				AEF7FDBD23842A290008AFB1 /* WeeklyTableViewController.swift */,
 				AE04559F237EE4570078FAC4 /* OrderViewController.swift */,
+				40E6D9762386F5BB00380209 /* recapViewController.swift */,
 			);
 			path = Ordering;
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 				4006D3E72382D8EF006D19EE /* UILoggingViewController.swift in Sources */,
 				AEED921E237C865C0056EA41 /* ChefBuddy.xcdatamodeld in Sources */,
 				46D486482382D0C500AE9F9F /* Storage.swift in Sources */,
+				40E6D9772386F5BB00380209 /* recapViewController.swift in Sources */,
 				46D486412382D01D00AE9F9F /* Product.swift in Sources */,
 				404ABD0E2384350600264503 /* storageTableViewController.swift in Sources */,
 				40E6D96D2386CF4800380209 /* productTableViewController.swift in Sources */,
