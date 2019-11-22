@@ -35,7 +35,8 @@ class storageTableViewController: UITableViewController {
             
         ]
 
-
+        var share: String?
+    
         override func numberOfSections(in tableView: UITableView) -> Int {
             return storageLocations.count
         }
@@ -58,7 +59,15 @@ class storageTableViewController: UITableViewController {
         }
     
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let productTableViewController = segue.destination as? productTableViewController,
+            let index = tableView.indexPathForSelectedRow?.row
+            else {
+                return
+        }
+        productTableViewController.pass = storageLocations[0].items[index]
+        print("done " , storageLocations[0].items[index] , index)
+    }
     
 
     /*
