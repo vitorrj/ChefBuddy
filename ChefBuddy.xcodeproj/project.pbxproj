@@ -18,6 +18,7 @@
 		40E6D9712386E29D00380209 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E6D9702386E29D00380209 /* Main.storyboard */; };
 		40E6D9732386ECF900380209 /* suppInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6D9722386ECF900380209 /* suppInfoViewController.swift */; };
 		40E6D9772386F5BB00380209 /* recapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6D9762386F5BB00380209 /* recapViewController.swift */; };
+		461CAB91238841E500578100 /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461CAB90238841E500578100 /* AddLocationViewController.swift */; };
 		464B6DBF238350A000AD254E /* ProductDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464B6DBE238350A000AD254E /* ProductDAO.swift */; };
 		464B6DC3238356BA00AD254E /* SupplierDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464B6DC2238356BA00AD254E /* SupplierDAO.swift */; };
 		464B6DC5238358C000AD254E /* StorageDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464B6DC4238358C000AD254E /* StorageDAO.swift */; };
@@ -161,6 +162,7 @@
 		40E6D9702386E29D00380209 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		40E6D9722386ECF900380209 /* suppInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suppInfoViewController.swift; sourceTree = "<group>"; };
 		40E6D9762386F5BB00380209 /* recapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recapViewController.swift; sourceTree = "<group>"; };
+		461CAB90238841E500578100 /* AddLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
 		464B6DBE238350A000AD254E /* ProductDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDAO.swift; sourceTree = "<group>"; };
 		464B6DC2238356BA00AD254E /* SupplierDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplierDAO.swift; sourceTree = "<group>"; };
 		464B6DC4238358C000AD254E /* StorageDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageDAO.swift; sourceTree = "<group>"; };
@@ -292,6 +294,7 @@
 		AEF7FDC123842C930008AFB1 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				461CAB90238841E500578100 /* AddLocationViewController.swift */,
 				40E6D96C2386CF4800380209 /* productTableViewController.swift */,
 				404ABD0D2384350600264503 /* storageTableViewController.swift */,
 				40E6D9632386CCB400380209 /* productInfoViewController.swift */,
@@ -505,6 +508,7 @@
 				407E92A32385A56F0019B288 /* LocationDAO.swift in Sources */,
 				407E92672385867F0019B288 /* addSupplierViewController.swift in Sources */,
 				AEED9214237C865C0056EA41 /* AppDelegate.swift in Sources */,
+				461CAB91238841E500578100 /* AddLocationViewController.swift in Sources */,
 				464B6DC5238358C000AD254E /* StorageDAO.swift in Sources */,
 				AE0455A0237EE4570078FAC4 /* OrderViewController.swift in Sources */,
 				46D486462382D0B100AE9F9F /* Supplier.swift in Sources */,

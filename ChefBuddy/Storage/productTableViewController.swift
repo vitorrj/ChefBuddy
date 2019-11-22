@@ -15,7 +15,7 @@ class productTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("pass: ", pass)
+       // print("pass: ", pass)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -60,13 +60,7 @@ class productTableViewController: UITableViewController {
     }
 
 
-    
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
 
-            print("deleted")
-
-    }
     
 
 }
