@@ -10,15 +10,20 @@ import UIKit
 
 class productInfoViewController: UIViewController {
 
+    var qt: Int = 3 //left
+    var usr: Int = 0 //userChoice
+    var temp: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let qlabelText:String = "N" + " Kg"
+        let qlabelText:String = String(qt) + " Kg"
         quantityLabel.text = qlabelText
 
         let ilabelText:String = "To be kept around " + "n" + " °C \n" + "Expiry date: " + "dd/mm/yyyy"
         infoLabel.text = ilabelText
 
+        temp = qt
         
         // Do any additional setup after loading the view.
     }
@@ -26,6 +31,16 @@ class productInfoViewController: UIViewController {
 
     @IBOutlet weak var quantityLabel: UILabel!
     @IBOutlet weak var infoLabel: UILabel!
+
+       
+       @IBOutlet weak var stepper: UIStepper!
+       @IBAction func stepperValueChanged(_ sender: UIStepper) {
+        
+        qt = temp+Int(sender.value)
+        quantityLabel.text = String(qt) + " Kg"
+        usr = Int(sender.value)
+    }
+    
     /*
     // MARK: - Navigation
 
