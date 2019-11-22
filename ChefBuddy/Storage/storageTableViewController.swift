@@ -9,56 +9,61 @@
 import UIKit
 
 class storageTableViewController: UITableViewController {
-
+    
+    var share: String?
+    var temps: [Location] = []
+    
+    struct Category {
+        var name: String
+        var items: [String]
+        var idLoc: [Int64]
+    }
+    
+    @IBOutlet var tv: UITableView!
+    var storageLocations: [Category] = [
+        Category(name: "Locations", items: LocationDAO.instance.getLocationsName(), idLoc: [])]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        LocationDAO.instance.addLocation(lnamLoc: "Fridge")
+        tv.delegate = self
+        tv.dataSource = self
+
+//       LocationDAO.instance.addLocation(lnamLoc: "Fridge 1")
+//        LocationDAO.instance.addLocation(lnamLoc: "Fridge 2")
+//        LocationDAO.instance.addLocation(lnamLoc: "Fridge 3")
 //        ProductDAO.instance.addProduct(pname: "Tomato", plocation: "Fridge", pidStor: 1, pbought: 5, pidSup: 1, pimage: "", pinfoWeight: "kg", premain: 2, pquick: false)
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        temps = LocationDAO.instance.getLocations()
+        for it in temps {
+            storageLocations[0].idLoc.append(it.idLoc)
+        }
     }
 
-    // MARK: - Table view data source
-
-        struct Category {
-            var name: String
-            var items: [String]
-        }
-        var storageLocations: [Category] = [
-            Category(name: "Locations",
-                     items: LocationDAO.instance.getLocationsName()),
-            
-        ]
-
-        var share: String?
-    
-        override func numberOfSections(in tableView: UITableView) -> Int {
-            return storageLocations.count
-        }
-
-        override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return storageLocations[section].items.count
-        }
 
 
-        override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "storageCell", for: indexPath)
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return storageLocations.count
+    }
 
-            cell.textLabel?.text = storageLocations[indexPath.section].items[indexPath.row]
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return storageLocations[section].items.count
+    }
 
-            return cell
-        }
-    
-        override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-            return storageLocations[section].name
-        }
-    
-    
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "storageCell", for: indexPath)
+
+        cell.textLabel?.text = storageLocations[indexPath.section].items[indexPath.row]
+
+        return cell
+    }
+
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return storageLocations[section].name
+    }
+
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let productTableViewController = segue.destination as? productTableViewController,
             let index = tableView.indexPathForSelectedRow?.row
@@ -66,7 +71,8 @@ class storageTableViewController: UITableViewController {
                 return
         }
         productTableViewController.pass = storageLocations[0].items[index]
-        print("done " , storageLocations[0].items[index] , index)
+        print("done " , storageLocations[0].idLoc[index] , index)
+        
     }
     
 
@@ -81,14 +87,12 @@ class storageTableViewController: UITableViewController {
     
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-//        if editingStyle == .delete {
-            print("deleted")
-            // Delete the row from the data source
-//         objects.remove(at: indexPath.row)
-//        tableView.deleteRows(at: [indexPath], with: .fade)
-//        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-//        }    
+        print("deleted")
+        LocationDAO.instance.deleteLocation(lid: Int64(storageLocations[indexPath.section].idLoc[indexPath.row]))
+
+        self.tv.reloadData()
+        tv.reloadData()
+        tableView.reloadData()
     }
     
 

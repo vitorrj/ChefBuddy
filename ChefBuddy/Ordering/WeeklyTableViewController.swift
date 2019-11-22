@@ -21,10 +21,10 @@ class WeeklyTableViewController: UITableViewController {
 //        ingredientInfo(location: "Fridge", ingredientName: ["🧀 Cheese", "🍅 Tomatoes"]),
 //        ingredientInfo(location: "Pantry", ingredientName: ["🥦 Basil", "🥐 Flour"])
 //    ]
-        var ingredient: [ingredientInfo] = [
-            ingredientInfo(location: "Fridge",
-                           ingredientName: ProductDAO.instance.getProductName())
-        ]
+    var ingredient: [ingredientInfo] = [
+        ingredientInfo(location: "Fridge",
+                       ingredientName: ProductDAO.instance.getProductName())
+    ]
     
 
     override func viewDidLoad() {

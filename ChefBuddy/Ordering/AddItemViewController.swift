@@ -10,6 +10,7 @@ import UIKit
 
 class AddItemViewController: UIViewController {
     
+    
     //          --  ADD PRDOCUCT  --
     @IBOutlet weak var Name: UITextField!
     @IBOutlet weak var location: UITextField!
@@ -29,12 +30,12 @@ class AddItemViewController: UIViewController {
     
     @IBAction func addProd(_ sender: UIButton) {
         
-        var pname: String? = Name.text
-        var ploc: String? = location.text
-        var pidSup: Int64! = Int64(idStorage.text!)
-        var pidSto: Int64! = Int64(idSupplier.text!)
-        var pimage: String? = image.text
-        var pinfoWeight: String? = infoWeight.text
+        let pname: String? = Name.text
+        let ploc: String? = location.text
+        let pidSup: Int64! = Int64(idStorage.text!)
+        let pidSto: Int64! = Int64(idSupplier.text!)
+        let pimage: String? = image.text
+        let pinfoWeight: String? = infoWeight.text
         //var pquick: Bool! = quick.isOn
         var insert: String?
                 
@@ -55,7 +56,7 @@ class AddItemViewController: UIViewController {
         prods = ProductDAO.instance.getProducts()
         
         for item in prods {
-            print(item.name)
+            print(item.name!)
         }
     }
     @IBAction func back(_ sender: UIButton) {
