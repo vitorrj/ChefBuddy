@@ -20,17 +20,23 @@ class AddLocationViewController: UIViewController {
     
 
     @IBAction func addLocation(_ sender: UIButton) {
+        let name: String? = lname.text
+        var insert: String?
+        
+        insert = LocationDAO.instance.addLocation(lnamLoc: name)
+        
+//        if (insert == "Insert done") {
+//            navigationController?.popViewController(animated: true)
+//            dismiss(animated: true, completion: nil)        }
+//        else {
+//            print("Error insert chek all forms")
+//        }
     }
-    /*
-    // MARK: - Navigation
+    
 
-     @IBAction func back(_ sender: UIButton) {
-     }
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func back(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
     }
-    */
-
+    
 }
