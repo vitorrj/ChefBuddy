@@ -17,11 +17,7 @@ class WeeklyTableViewController: UITableViewController {
         var product: [Product] = []
     }
     
-//    ARRAY OF INGREDIENTS
-//    var ingredient: [ingredientInfo] = [
-//        ingredientInfo(location: "Fridge", ingredientName: ["🧀 Cheese", "🍅 Tomatoes"]),
-//        ingredientInfo(location: "Pantry", ingredientName: ["🥦 Basil", "🥐 Flour"])
-//    ]
+
     var ingredient: [ingredientInfo] = [
         ingredientInfo(location: "Fridge",
                        ingredientName: ProductDAO.instance.getProductName(), product: ProductDAO.instance.getProducts())
@@ -31,9 +27,10 @@ class WeeklyTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
     }
-
+    
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return ingredient.count
@@ -49,8 +46,8 @@ class WeeklyTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ingredientList", for: indexPath) 
 //        cell.item! = ingredient[indexPath.section].product[indexPath.row]
-//        cell.textLabel?.text = ingredient[indexPath.section].ingredientName[indexPath.row]
-//        cell.textLabel?.text = ingredient[indexPath.section].ingredientName[indexPath.row]
+        cell.textLabel?.text = ingredient[indexPath.section].ingredientName[indexPath.row]
+        cell.textLabel?.text = ingredient[indexPath.section].ingredientName[indexPath.row]
         
         return cell
     }  
@@ -59,7 +56,31 @@ class WeeklyTableViewController: UITableViewController {
         return ingredient[section].location
     }
 
+            func screenShotMethod() {
+                //Create the UIImage
+                UIGraphicsBeginImageContext(view.frame.size)
+                view.layer.render(in: (UIGraphicsGetCurrentContext()!))
+                let image = UIGraphicsGetImageFromCurrentImageContext()!
+                UIGraphicsEndImageContext()
+                //Save it to the camera roll
+                UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+                
+                print ("screened")
+            }
+    
+            
+    
+    @IBOutlet weak var done_button: UIBarButtonItem!
+    
+    @IBAction func done(_ sender: Any) {
+        screenShotMethod()
+        let alertController = UIAlertController(title: "Order Done!", message:
+               "Your order has been saved and updated", preferredStyle: .alert)
+           alertController.addAction(UIAlertAction(title: "Return", style: .default))
 
+           self.present(alertController, animated: true, completion: nil)
+    }
+    
 }
 
 
