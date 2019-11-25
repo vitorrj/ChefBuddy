@@ -83,6 +83,17 @@ class storageTableViewController: UITableViewController {
         return true
     }
     */
+    
+    override func viewWillAppear(_ animated: Bool) {
+        storageLocations = [
+        Category(name: "Locations", items: LocationDAO.instance.getLocationsName(), idLoc: [])]
+        temps = LocationDAO.instance.getLocations()
+        for it in temps {
+            storageLocations[0].idLoc.append(it.idLoc)
+        }
+        self.tv.reloadData()
+        tv.reloadData()
+    }
 
     
     // Override to support editing the table view.
@@ -90,9 +101,14 @@ class storageTableViewController: UITableViewController {
         print("deleted")
         LocationDAO.instance.deleteLocation(lid: Int64(storageLocations[indexPath.section].idLoc[indexPath.row]))
 
+        storageLocations = [
+        Category(name: "Locations", items: LocationDAO.instance.getLocationsName(), idLoc: [])]
+        temps = LocationDAO.instance.getLocations()
+        for it in temps {
+            storageLocations[0].idLoc.append(it.idLoc)
+        }
         self.tv.reloadData()
         tv.reloadData()
-        tableView.reloadData()
     }
     
 
