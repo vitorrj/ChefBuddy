@@ -10,13 +10,16 @@ import UIKit
 import LocalAuthentication
 
 class logViewController: UIViewController {
+    
+    @IBOutlet weak var appLogo: UIImageView!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarController?.tabBar.isHidden = true
         // Do any additional setup after loading the view.
     }
-    
+        
     @IBAction func login(_ sender: UIButton) {
         self.Authenticate { (success) in
              print(success)

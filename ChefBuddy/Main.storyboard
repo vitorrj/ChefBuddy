@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6cE-xu-3DK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6cE-xu-3DK">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -89,11 +89,11 @@
                                 <rect key="frame" x="0.0" y="28" width="414" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uMU-AQ-WlN" id="Zmz-0J-BuV">
-                                    <rect key="frame" x="0.0" y="0.0" width="383" height="65"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="382.5" height="65"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="Mlq-bc-kYO">
-                                            <rect key="frame" x="20" y="0.0" width="355" height="65"/>
+                                            <rect key="frame" x="20" y="0.0" width="354.5" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <attributedString key="attributedText">
                                                 <fragment content="Title">
@@ -620,53 +620,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chef Buddy" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JqJ-Ke-izw">
-                                <rect key="frame" x="93" y="81" width="228" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Svi-bS-wVp">
-                                <rect key="frame" x="76" y="229" width="205" height="34"/>
+                                <rect key="frame" x="87" y="319" width="240" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pass" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nJ3-mH-RR4">
-                                <rect key="frame" x="76" y="294" width="205" height="34"/>
+                                <rect key="frame" x="88" y="384" width="238" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBz-qV-BIX">
-                                <rect key="frame" x="76" y="183" width="53" height="27"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2U6-qd-HpO">
+                                <rect key="frame" x="173" y="718" width="52" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Login F ID" image="􀎽"/>
+                                <connections>
+                                    <action selector="backFID:" destination="mXG-3s-gTm" eventType="touchUpInside" id="KZX-Ku-XBe"/>
+                                    <action selector="login:" destination="mXG-3s-gTm" eventType="touchUpInside" id="K62-mR-dxh"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChefBuddyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="gJa-9q-nrq">
+                                <rect key="frame" x="87" y="84" width="240" height="91"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBc-II-XMh">
-                                <rect key="frame" x="83" y="367" width="38" height="30"/>
+                                <rect key="frame" x="187" y="442" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="back:" destination="mXG-3s-gTm" eventType="touchUpInside" id="xbR-hB-ApE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2U6-qd-HpO">
-                                <rect key="frame" x="191" y="365" width="90" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login F ID"/>
-                                <connections>
-                                    <action selector="backFID:" destination="mXG-3s-gTm" eventType="touchUpInside" id="KZX-Ku-XBe"/>
-                                    <action selector="login:" destination="mXG-3s-gTm" eventType="touchUpInside" id="K62-mR-dxh"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gJa-9q-nrq" firstAttribute="top" secondItem="H2X-XC-Qsu" secondAttribute="top" constant="40" id="6aY-kd-tsT"/>
+                            <constraint firstItem="gJa-9q-nrq" firstAttribute="leading" secondItem="H2X-XC-Qsu" secondAttribute="leading" constant="87" id="KdO-Lz-65a"/>
+                            <constraint firstItem="H2X-XC-Qsu" firstAttribute="trailing" secondItem="gJa-9q-nrq" secondAttribute="trailing" constant="87" id="dQ7-HZ-yUq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="H2X-XC-Qsu"/>
                     </view>
+                    <connections>
+                        <outlet property="appLogo" destination="gJa-9q-nrq" id="GyC-c0-Wbm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sGC-8d-uDP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -674,10 +672,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ChefBuddyLogo" width="247" height="91"/>
         <image name="book.fill" catalog="system" width="64" height="50"/>
-        <image name="cart.fill" catalog="system" width="64" height="50"/>
+        <image name="cart.fill" catalog="system" width="64" height="52"/>
         <image name="person.fill" catalog="system" width="64" height="60"/>
-        <image name="plus" catalog="system" width="64" height="56"/>
+        <image name="plus" catalog="system" width="64" height="58"/>
+        <image name="􀎽" width="65" height="65"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="QWO-mw-dtK"/>
