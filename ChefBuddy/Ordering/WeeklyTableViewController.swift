@@ -32,7 +32,12 @@ class WeeklyTableViewController: UITableViewController {
 
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let resultViewController = storyBoard.instantiateViewController(withIdentifier: "logView")
+//        resultViewController.presentingViewController = resultViewController.star
+        resultViewController.navigationItem.hidesBackButton = true
+//        resultViewController.tabBarItem = hidd
         self.navigationController?.pushViewController(resultViewController, animated: true)
+//        self.tabBarController?.tabBar.hidden = true
+
     }
     
 
