@@ -39,7 +39,7 @@ class WeeklyTableViewController: UITableViewController {
 //        self.tabBarController?.tabBar.hidden = true
 
     }
-    
+
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return ingredient.count

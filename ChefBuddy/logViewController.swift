@@ -25,6 +25,10 @@ class logViewController: UIViewController {
         }
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+                self.tabBarController?.tabBar.isHidden = false
+    }
+    
     func Authenticate(completion: @escaping ((Bool) -> ())){
 
         //Create a context

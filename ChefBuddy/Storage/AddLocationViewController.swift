@@ -19,18 +19,14 @@ class AddLocationViewController: UIViewController {
     @IBOutlet weak var lname: UITextField!
     
 
+
     @IBAction func addLocation(_ sender: UIButton) {
         let name: String? = lname.text
         var insert: String?
         
         insert = LocationDAO.instance.addLocation(lnamLoc: name)
-        
-//        if (insert == "Insert done") {
-//            navigationController?.popViewController(animated: true)
-//            dismiss(animated: true, completion: nil)        }
-//        else {
-//            print("Error insert chek all forms")
-//        }
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
     }
     
 
