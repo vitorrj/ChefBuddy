@@ -27,8 +27,12 @@ class WeeklyTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+//        let login = logViewController()
+//        self.navigationController?.pushViewController(login, animated: true)
 
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let resultViewController = storyBoard.instantiateViewController(withIdentifier: "logView")
+        self.navigationController?.pushViewController(resultViewController, animated: true)
     }
     
 

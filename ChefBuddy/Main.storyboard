@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mXG-3s-gTm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6cE-xu-3DK">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -84,7 +84,7 @@
             <objects>
                 <tableViewController id="gMx-3j-Bkb" customClass="storageTableViewController" customModule="ChefBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="65" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" springLoaded="YES" id="S8v-u6-W6k">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
@@ -186,7 +186,7 @@
             <objects>
                 <tableViewController id="9r5-Sx-EJ8" customClass="productTableViewController" customModule="ChefBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sru-8C-deT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
@@ -337,7 +337,7 @@
                 <navigationController id="R0W-xu-kKd" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Storage" image="book.fill" catalog="system" selectedImage="book.fill" id="89e-F0-3vi"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ANc-kC-g5N">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -354,7 +354,7 @@
                 <navigationController id="sZJ-gQ-aBm" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Suppliers" image="person.fill" catalog="system" selectedImage="person.fill" id="3DT-rn-Fxx"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ijK-xc-5oI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -372,7 +372,7 @@
                     <tabBarItem key="tabBarItem" title="Order" image="cart.fill" catalog="system" selectedImage="cart.fill" id="knw-kT-ofl"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="woQ-qA-pUk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -481,7 +481,7 @@
             <objects>
                 <viewController id="Zjf-p6-NSk" customClass="productInfoViewController" customModule="ChefBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cqk-kL-6W7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cvu-jV-G4R">
@@ -562,7 +562,7 @@
             <objects>
                 <tableViewController id="fvT-AH-JLn" customClass="WeeklyTableViewController" customModule="ChefBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="AJB-gP-X76">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
@@ -618,7 +618,7 @@
         <!--Log View Controller-->
         <scene sceneID="sTC-SX-uuF">
             <objects>
-                <viewController id="mXG-3s-gTm" customClass="logViewController" customModule="ChefBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="logView" id="mXG-3s-gTm" customClass="logViewController" customModule="ChefBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lM0-yP-X1s">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -654,7 +654,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <segue destination="6cE-xu-3DK" kind="show" id="h50-bC-8Yu"/>
+                                    <action selector="back:" destination="mXG-3s-gTm" eventType="touchUpInside" id="xbR-hB-ApE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2U6-qd-HpO">
@@ -662,8 +662,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login F ID"/>
                                 <connections>
+                                    <action selector="backFID:" destination="mXG-3s-gTm" eventType="touchUpInside" id="KZX-Ku-XBe"/>
                                     <action selector="login:" destination="mXG-3s-gTm" eventType="touchUpInside" id="K62-mR-dxh"/>
-                                    <segue destination="6cE-xu-3DK" kind="show" id="BQQ-kf-J6M"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -684,6 +684,5 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="QWO-mw-dtK"/>
-        <segue reference="h50-bC-8Yu"/>
     </inferredMetricsTieBreakers>
 </document>

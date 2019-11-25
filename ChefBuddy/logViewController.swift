@@ -118,4 +118,20 @@ class logViewController: UIViewController {
     }
 
 
+    @IBAction func back(_ sender: UIButton) {
+        // _ = navigationController?.popViewController(animated: true)
+        navigationController?.popViewController(animated: true)
+
+        dismiss(animated: true, completion: nil)
+
+    }
+    
+    @IBAction func backFID(_ sender: UIButton) {
+        // _ = navigationController?.popViewController(animated: true)
+        navigationController?.popViewController(animated: true)
+
+        dismiss(animated: true, completion: nil)
+
+    }
+    
 }
